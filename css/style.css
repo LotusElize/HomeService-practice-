@@ -1,0 +1,76 @@
+*,::before,::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	font-style: normal;
+}
+
+.header {
+	width: 100%;
+	max-width: 1920px;
+	height: 80px;
+	background-color: #142257;
+	padding: 24px 160px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #FFF;
+}
+
+.header__logo {
+	width: 148px;
+	height: 32px;
+}
+
+.header__nav {
+	min-width: 478px;
+	display: flex;
+	gap: 57px;
+}
+
+.header__service_link, .header__nav_link {
+	font-weight: 700;
+	text-decoration: none;
+	color: #FFF;
+}
+.header__service_link::before {
+	content: url(/images/ico/on_off_mode.svg);
+	border-radius: 100%;
+	position: relative;
+	right: 10px;
+}
+
+.main__hero {
+	max-width: 1920px;
+	height: 977px;
+	background-color: #142257;
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero__pic {
+	flex-shrink: 0;
+	border-radius: 24px;
+	fill: linear-gradient(35deg, #131F4B 4.15%, rgba(19, 31, 75, 0.00) 43.25%);
+}
+
+.main__hero_title{
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.main__title {
+	color: var(--Neutural-White, #FFF);
+	text-align: center;
+	font-size: 64px;
+	font-weight: 800;
+	line-height: 76px;
+}
